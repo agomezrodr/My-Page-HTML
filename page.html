@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 50px;
+            text-align: center;
+            background: #00465B;
+            color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 14px;
+        }
+        h4 {
+            font-size: 15px;
+        }
+        h5 {
+            font-size: 17px;
+            color: #00465B;
+        }
+        h6 {
+            font-size: 28px;
+            font-style: italic;
+            color: deepskyblue;
+        }
+        p {
+            font-size: 12px;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        .side {
+            -ms-flex: 20%; /* IE10 */
+            flex: 20%;
+            background-color: #636a6e;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%; /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #00465B;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Adrian Gomez Rodriguez</h1>
+    <h6>Computer Science</h6>
+</div>
+
+<div class="navbar">
+    <a href="Resume2018.docx" download>Download Resume</a>
+    <a href="#">Download Cover Letter</a>
+    <a href="https://github.com/agomezrodr">Projects</a>
+    <!----  <a href="#" class="right">Link</a> -->
+</div>
+
+<div class="row">
+    <div class="side">
+        <h2>Contact Me</h2>
+        <img src="formal.jpg" alt="Adrian Gomez Rodriguez" width="300" height="345">
+        <h3>University of Texas at El Paso</h3>
+        <h3>Phone number: +1-915-260-0292</h3>
+        <h3>Email: agomezrodr@miners.utep.edu</h3>
+
+    </div>
+    <div class="main">
+        <h2>Resume</h2>
+        <h5>Education</h5>
+        <h4>University of Texas at El Paso (UTEP)</h4>
+        <p>Associate of science in Computer Science.</p>
+        <p>- GPA of 3.15/4.0</p>
+        <p>- Dean’s list diploma from UTEP on spring 2018</p>
+        <h4>El Paso Community College (EPCC)</h4>
+        <p>Bachelors in Computer Science.</p>
+        <p>- GPA of 3.02/4.0.</p>
+        <p>- Member of the National Society of Collegiate Scholars.</p>
+        <p>- Member of the Computer Science Club from January 2017 to May 2017.</p>
+
+
+        <h5>Work Experience</h5>
+        <h4>02/2019 – 06/2019. US-Mexico Interdiciplinary Reaserch Collaboration for Smart Cities (NSF-IRES Program) - El Paso, TX - Guadalajara, Jalisco, Mexico.</h4>
+         <p>• Contributed to the development of smart mobility innovations and solutions related to the scalability, modularity, interoperability, resiliency and sustainability of infrastructure and services.</p>
+         <p>• Collaborate in the smart cities report that was sent to Casablanca, Morocco.</p>
+         <p>• Collaborate in the mobile application (SCS) that was generated to create panic alert and reports.</p>
+
+        <h4>10/2017 – 05/2019. Signature Uniforms - El Paso, TX</h4>
+        <p>•	 Serve around 25 customers per day and help them find the uniforms, shoes or accessories they are looking.</p>
+        <p>•	 Process payments on the computer through vouchers, payrolls, credit cards and cash.</p>
+        <p>•	 Receive boxes, put prices on items and check if any item is for an order.</p>
+        <p>•	 Receive and make phone calls, organize the store and check that the paperwork is correct.</p>
+
+        <h4>10/2016 – 06/2017. New Deal Furniture - El Paso, TX.</h4>
+        <p>• Took applications of the customer and process it in the finances that we had, check credit report, organize the invoices and paperwork from customers..</p>
+        <p>• Data entry of sales, information of customers and reports of every day.</p>
+        <p>• Receive and make calls, process payments through the phone, make excel formats to make the data entry easier.</p>
+
+        <h4>07/2014 – 07/2016. McDonald’s - El Paso, TX.</h4>
+        <p>• Took orders and payments, prepare the order and give it to the customer.</p>
+        <p>•	 Received the truck with the products, count everything and organize it in its respective place.</p>
+        <p>• Trained around 6 new employees in their respective areas of work, give a good maintenance to all the machines in the store.</p>
+
+        <h5>Projects</h5>
+        <p>•	 Sudoku game with networking connection using java applet (Java).</p>
+        <p>• Car Wash Machine simulator (Assembly code).</p>
+        <p>•	 Battleship game (Java).</p>
+        <p>•	 Connect 4 game (PHP, AspectJ, and Haskell).</p>
+        <p>• Hockey game using a MSP430 (C code).</p>
+        <p>•	 Brain Strategy Game for Android (Java).</p>
+        <p>•	 Safe Commuting System (SCS) for Android (Java, JS and Python)</p>
+
+        <h5>Programming Languages</h5>
+        <table style="width:100%">
+            <tr>
+                <th>Language</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Java, HTML, XML, and SQL.</td>
+                <td>Proficient</td>
+            </tr>
+            <tr>
+                <td>Dart, Python, C, and Assembly language.</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>PHP, JavaScript, Haskell, Aspect J, and CSS</td>
+                <td>Basic</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="footer">
+    <h3>© Copyright 2019. Adrian Gomez Rodriguez</h3>
+</div>
+
+</body>
+</html>
